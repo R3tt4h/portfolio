@@ -1,24 +1,23 @@
 import './App.css';
-import { Navbar, Home, Footer }  from './components';
+import { Navbar, MainPage, AboutPage, ProjectsPage }  from './components';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
+      <div className      = "App">
+        <header className = "App-header">
         <Navbar/>
+        <div class        = "nav-space"></div>
+        <Switch>
+          <Route path     = "/" exact component         = {MainPage}/>
+          <Route path     = "/about" exact component    = {AboutPage}/>
+          <Route path     = "/projects" exact component = {ProjectsPage}/>
+        </Switch>
         </header>
-        <body className="App-body">
-          <Home/>
-        </body>
-        <footer className="App-footer">
-          <Footer/>
-        </footer>
       </div>
     </Router>
-
   );
 }
 

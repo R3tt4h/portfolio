@@ -2,6 +2,7 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import "./Slider.css"
+import Image from '../assets/projet.jpg'
 
 function Slider() {
     const baseUrl = "http://react-responsive-carousel.js.org/assets/"
@@ -35,7 +36,6 @@ function Slider() {
         thumbWidth={120} 
         showIndicators={false}
         showStatus={false}
-        showArrows={false}
         >
             {datas.map(slide => (
                 <div key={slide.id}>

@@ -21,7 +21,7 @@ function ContactForm() {
                 <label for="message">Message : </label>
                 <textarea name="message"></textarea>
 
-                <button type="submit">Envoyer</button>
+                <div className="button__form"><button type="submit">Envoyer</button></div>
             </form>
                 
         </div>

@@ -1,4 +1,4 @@
-import '../App.css';
+import './Project.css';
 import React from 'react';
 import { Slider } from '.';
 

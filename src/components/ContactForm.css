@@ -4,6 +4,7 @@
 }
 
 .contact__form {
+    width: 550px;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -18,4 +19,27 @@
 
 .contact__form button {
     padding: 1.2rem;
+}
+
+.contact__form textarea {
+    height: 150px;
+}
+
+.contact__form button {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+    .contact__form {
+        width: 250px;
+    }
+
+    .button__form {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -1,18 +1,17 @@
-import '../App.css';
+import './Home.css'
 import React from 'react';
 
-import { About, Contact, Project }  from '.';
 
+function Home() {
 
-function Page() {
-    return(
-        <div>
-            <About/>
-            <Project/>
-            <Contact/>
-        </div>
-
-    )
-}
-
-export default Page;
+    return (
+        <section id               = "home">
+            <div className        = "content-home">
+                    <p className  = "hello">Bonjour!</p>
+                    <h1 className = "presentation">Je suis Kevin Almeida,<br/>développeur web.</h1>
+            </div>
+        </section>
+    );
+  }
+  
+  export default Home;

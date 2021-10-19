@@ -1,11 +1,13 @@
-import Home from './Home';
+import MainPage from './MainPage';
 import Navbar from './Navbar';
-import About from './About';
+import Home from './Home';
 import Contact from './Contact';
 import Project from './Project';
 import Footer from './Footer';
 import Slider from './Slider';
 import ContactForm from './ContactForm';
+import AboutPage from './AboutPage';
+import ProjectsPage from './ProjectsPage';
 
 
-export { Home, Navbar, About, Contact, Project, Footer, Slider, ContactForm };
+export { MainPage, Navbar, Home, Contact, Project, Footer, Slider, ContactForm, AboutPage, ProjectsPage };
