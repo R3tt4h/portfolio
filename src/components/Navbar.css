@@ -152,7 +152,7 @@
     .github-icon {
       width: 25px;
       height: 25px;
-      padding: 0px 1em 0px 0px;
+      padding: 0px 1em 1em 0px;
 
     }
 
@@ -165,10 +165,32 @@
 
   @media screen and (max-width: 470px) {
     .dark-mode-toggle{
-      flex-direction: column
+      font-size: 13px;
+      flex-direction: column;
+      padding: 5px;
     }
 
     .toggle-control{
-      transform: rotate(90deg)
+      transform: rotate(90deg);
+    }
+
+    .toggle{
+      top: 0;
+    }
+
+    .github-icon {
+      width: 25px;
+      height: 25px;
+      padding: 0px 1em 1em 0px;
+
+    }
+
+    .navbar-li{
+      font-size: 100%;
+    }
+
+    .home-icon{
+      width: 16px;
+      height: 16px;
     }
   };
