@@ -7,17 +7,15 @@ function App() {
   return (
     <Router>
       <div className = "App">
-        <header className = "App-header">
-          <Navbar/>
-        </header>
+        <Navbar/>
         <body className = "App-body">
           <Switch>
             <Route path = "/" exact component = {MainPage}/>
           </Switch>
         </body>
         <footer className = "App-footer">
-        <Footer/>
-      </footer>
+          <Footer/>
+        </footer>
       </div>
     </Router>
   );
