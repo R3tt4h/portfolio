@@ -7,7 +7,7 @@ function Project() {
         <section id="project">
             <div class="content-project">
                 <div className = "space"></div>
-                <h2 className=" project-title reveal">Mes projets</h2>
+                <h2 className=" project-title " data-aos="fade-up">Mes projets</h2>
                 <ProjectCard/>
             </div>
         </section>

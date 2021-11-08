@@ -41,7 +41,7 @@ function ProjectCard() {
             <div>
                 {datas.map(project => (
                 <div>
-                    <div key={project.id} className = "info-project reveal">
+                    <div key={project.id} className = "info-project" data-aos="fade-up">
                         <p className="info-project-text">
                             <h2 className="info-project-title"> {project.title} </h2>
                             <p>{project.desc}</p>

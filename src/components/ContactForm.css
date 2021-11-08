@@ -33,7 +33,19 @@
     justify-content: center;
 }
 
-@media only screen and (max-width: 1100px) {
+@media (min-width: 471px) and (max-width: 1100px) {
+    .contact__form {
+        width: 400px;
+        padding: 0;
+    }
+
+    .button__form {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
     .contact__form {
         width: 250px;
         padding: 0;

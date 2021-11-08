@@ -4,193 +4,189 @@
     position: fixed;
     background-color: white;
     z-index: 2;
+}
+
+.home-anchor {
+  position: absolute;
+  left: 0;
+  margin-left: 1%;
+}
+
+.toggle{
+  position: absolute;
+  right: 0;
+  margin-right: 1%;
+}
+
+.home-icon{
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-ul{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.navbar-li{
+  padding: 5px;
+  font-size: 22px;
+  animation: 4s hide-n-seek;
+}
+
+.navbar-li a{
+  color: black;
+  padding: 10px;
+}
+
+.menu__link:focus{
+  font-weight: 600;
+}
+
+.text-underlined{
+  position: relative;
+  overflow: hidden;
+  will-change: color;
+  transition: color .25s ease-out;  
+}
+  
+.text-underlined::before, 
+.text-underlined::after{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #628e3d;
+  
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+  
+.text-underlined::before{
+  left: 50%;
+  transform: translateX(-50%); 
+}
+  
+.text-underlined::after{
+  right: 50%;
+  transform: translateX(50%); 
+}
+  
+.text-underlined:hover::before, 
+.text-underlined:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+  
+#sidebar{
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  background-color: transparent;
+  z-index: 2;
+  animation: 4s hide-n-seek;
+}
+
+.github-icon {
+  width: 50px;
+  height: 50px;
+  color: black;
+  margin: 0 .4em .2em 0;
+}
+
+.github-icon:hover{
+    width: 55px;
+    height: 55px;
+}
+
+.toggle {
+  animation: 4s hide-n-seek;
+}
+
+/**
+* Apparition progressive des éléments
+* exemple: navbar et logo github
+*/
+@keyframes hide-n-seek {
+  from {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@media (min-width: 471px) and (max-width: 1100px) {
+  #navbar{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 
-  .home-anchor {
-    position: absolute;
-    left: 0;
-    margin-left: 1%;
-  }
-
-  .toggle{
-    position: absolute;
-    right: 0;
-    margin-right: 1%;
+  .navbar-li{
+    font-size: 18px;
   }
 
   .home-icon{
-    width: 30px;
-    height: 30px;
-  }
-  
-  .navbar-ul{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  .navbar-li{
-    padding: 5px;
-    font-size: 22px;
-  }
-  
-  .navbar-li a{
-    color: black;
-    padding: 10px;
-  }
-
-
-  .menu__link:focus{
-    font-weight: 600;
-  }
-
-  .text-underlined{
-    position: relative;
-    overflow: hidden;
-    will-change: color;
-    transition: color .25s ease-out;  
-  }
-  
-  .text-underlined::before, 
-  .text-underlined::after{
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: #628e3d;
-    
-  
-    will-change: width;
-    transition: width .1s ease-out;
-  
-    position: absolute;
-    bottom: 0;
-  }
-  
-  .text-underlined::before{
-    left: 50%;
-    transform: translateX(-50%); 
-  }
-  
-  .text-underlined::after{
-    right: 50%;
-    transform: translateX(50%); 
-  }
-  
-  .text-underlined:hover::before, 
-  .text-underlined:hover::after{
-    width: 100%;
-    transition-duration: .2s;
-  }
-
-  .navbar-li{
-    animation: 4s hide-n-seek;
-  }
-  
-  #sidebar{
-    height: 50px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: flex-end;
-    background-color: transparent;
-    z-index: 2;
-    animation: 4s hide-n-seek;
+    width: 16px;
+    height: 16px;
   }
 
   .github-icon {
-    width: 50px;
-    height: 50px;
-    color: black;
-    padding: 0px 2em 1em 0px;
+    width: 40px;
+    height: 40px;
+    margin: 0 .4em .2em 0;
+
   }
 
-  .github-icon:hover{
-      width: 55px;
-      height: 55px;
+  .github-icon:hover {
+    width: 25px;
+    height: 25px;
   }
-
-  .toggle {
-    animation: 4s hide-n-seek;
-  }
-
-  /**
-  * Apparition progressive des éléments
-  * exemple: navbar et logo github
-  */
-  @keyframes hide-n-seek {
-    from {
-      opacity: 0;
-    }
-    50%{
-      opacity: 0;
-    }
-    to {
-      opacity: 100;
-    }
-  }
-
-  @media (min-width: 471px) and (max-width: 1100px) {
-    #navbar{
-      width: 100vw;
-      height: 5vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-    }
-
-    .navbar-li{
-      font-size: 100%;
-    }
-
-    .home-icon{
-      width: 16px;
-      height: 16px;
-    }
-
-    .github-icon {
-      width: 25px;
-      height: 25px;
-      padding: 0px 1em 1em 0px;
-
-    }
-
-    .github-icon:hover {
-      width: 25px;
-      height: 25px;
-    }
   
+}
+
+@media screen and (max-width: 470px) {
+  .dark-mode-toggle{
+    font-size: 13px;
+    flex-direction: column;
+    padding: 5px;
   }
 
-  @media screen and (max-width: 470px) {
-    .dark-mode-toggle{
-      font-size: 13px;
-      flex-direction: column;
-      padding: 5px;
-    }
+  .toggle-control{
+    transform: rotate(90deg);
+  }
 
-    .toggle-control{
-      transform: rotate(90deg);
-    }
+  .toggle{
+    top: 0;
+  }
 
-    .toggle{
-      top: 0;
-    }
+  .github-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 .4em .2em 0;
 
-    .github-icon {
-      width: 25px;
-      height: 25px;
-      padding: 0px 1em 1em 0px;
+  }
 
-    }
+  .navbar-li{
+    font-size: 100%;
+  }
 
-    .navbar-li{
-      font-size: 100%;
-    }
-
-    .home-icon{
-      width: 16px;
-      height: 16px;
-    }
-  };
+  .home-icon{
+    width: 16px;
+    height: 16px;
+  }
+};
