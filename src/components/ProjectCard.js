@@ -44,7 +44,7 @@ function ProjectCard() {
                     <div key={project.id} className = "info-project reveal">
                         <p className="info-project-text">
                             <h2 className="info-project-title"> {project.title} </h2>
-                            {project.desc}
+                            <p>{project.desc}</p>
                             <br/><br/>
                             <strong>Technologies :</strong> {project.tech}
                         </p>

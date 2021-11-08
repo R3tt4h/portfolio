@@ -49,7 +49,7 @@
     }
 
     .img-me{
-        width: 40%;
+        width: 80%;
     }
 
     .info-about{
@@ -60,5 +60,9 @@
 
     .about-title{
         font-size: 30px;
+    }
+
+    #about{
+        margin-bottom: 40px;
     }
 }
