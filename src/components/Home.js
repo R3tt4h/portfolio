@@ -1,5 +1,5 @@
 import React from 'react';
-import './Homes.css'
+import './Home.css'
 
 
 function Home() {
