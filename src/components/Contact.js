@@ -6,7 +6,7 @@ import { ContactForm } from '.';
 function Contact() {
     return (
         <section id="contact">
-            <div className="content-contact">
+            <div className="content-contact reveal">
                 <h2>Me contacter</h2>
                 <ContactForm/>
             </div>

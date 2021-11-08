@@ -5,12 +5,11 @@ import { Icon } from '@iconify/react';
 function Footer() {
     return (
         <div className="footer">
-            <a href="#about">
-                <Icon icon="bi:arrow-up-circle-fill" className="logo-up-arrow"/>
-            </a>
-            <a href="https://github.com/R3tt4h" target="_blank" rel="noreferrer">
-                <Icon icon="akar-icons:github-fill" className="logo-github"/>
-            </a>
+            <a href="#home"><Icon className="arrow-up-icon" icon="dashicons:arrow-up-alt2" /></a>
+            <div className="footer-copyright">
+                <Icon className="copyright-icon" icon="fa-regular:copyright" />
+                2021 - <a className="linkedin" href="https://www.linkedin.com/in/almeida-kevin/" target="_blank" rel="noreferrer">Kevin Almeida <Icon className="linkedin-icon" icon="entypo-social:linkedin-with-circle" /></a>
+            </div>
         </div>
     );
   }

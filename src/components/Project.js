@@ -1,12 +1,14 @@
 import './Project.css';
 import React from 'react';
-import { Slider } from '.';
+import ProjectCard from './ProjectCard';
 
 function Project() {
     return (
         <section id="project">
             <div class="content-project">
-                <Slider/>
+                <div className = "space"></div>
+                <h2 className=" project-title reveal">Mes projets</h2>
+                <ProjectCard/>
             </div>
         </section>
     );
