@@ -1,6 +1,6 @@
 import React from 'react';
+import './DarkModeToggle.css'
 import './Home.css'
-
 
 function Home() {
 
